@@ -1,0 +1,35 @@
+[09-Mar-2018 07:21:23 UTC] PHP Notice:  Undefined variable: show_remember_me in /home/thewiraw/aol.thewirawan.com/wp-content/themes/aol/functions/widget-login.php on line 140
+[09-Mar-2018 07:21:23 UTC] PHP Notice:  Undefined variable: style in /home/thewiraw/aol.thewirawan.com/wp-content/themes/aol/functions/widget-recent-posts.php on line 144
+[09-Mar-2018 07:21:23 UTC] PHP Notice:  Undefined variable: style in /home/thewiraw/aol.thewirawan.com/wp-content/themes/aol/functions/widget-recent-posts.php on line 145
+[09-Mar-2018 15:35:10 UTC] PHP Notice:  Undefined variable: show_remember_me in /home/thewiraw/aol.thewirawan.com/wp-content/themes/aol/functions/widget-login.php on line 140
+[09-Mar-2018 15:35:11 UTC] PHP Notice:  Undefined variable: style in /home/thewiraw/aol.thewirawan.com/wp-content/themes/aol/functions/widget-recent-posts.php on line 144
+[09-Mar-2018 15:35:11 UTC] PHP Notice:  Undefined variable: style in /home/thewiraw/aol.thewirawan.com/wp-content/themes/aol/functions/widget-recent-posts.php on line 145
+[10-Mar-2018 12:51:43 UTC] PHP Notice:  Undefined variable: show_remember_me in /home/thewiraw/aol.thewirawan.com/wp-content/themes/aol/functions/widget-login.php on line 140
+[10-Mar-2018 12:51:43 UTC] PHP Notice:  Undefined variable: style in /home/thewiraw/aol.thewirawan.com/wp-content/themes/aol/functions/widget-recent-posts.php on line 144
+[10-Mar-2018 12:51:43 UTC] PHP Notice:  Undefined variable: style in /home/thewiraw/aol.thewirawan.com/wp-content/themes/aol/functions/widget-recent-posts.php on line 145
+[10-Mar-2018 13:35:32 UTC] PHP Notice:  Undefined variable: show_remember_me in /home/thewiraw/aol.thewirawan.com/wp-content/themes/aol/functions/widget-login.php on line 140
+[10-Mar-2018 13:35:32 UTC] PHP Notice:  Undefined variable: style in /home/thewiraw/aol.thewirawan.com/wp-content/themes/aol/functions/widget-recent-posts.php on line 144
+[10-Mar-2018 13:35:32 UTC] PHP Notice:  Undefined variable: style in /home/thewiraw/aol.thewirawan.com/wp-content/themes/aol/functions/widget-recent-posts.php on line 145
+[10-Mar-2018 14:36:29 UTC] PHP Fatal error:  Call to undefined function mfn_opts_get() in /home/thewiraw/aol.thewirawan.com/wp-content/themes/aol/functions.php on line 55
+[10-Mar-2018 14:37:08 UTC] PHP Fatal error:  Call to undefined function mfn_opts_get() in /home/thewiraw/aol.thewirawan.com/wp-content/themes/aol/functions.php on line 55
+[10-Mar-2018 14:38:30 UTC] PHP Fatal error:  Call to undefined function mfn_opts_get() in /home/thewiraw/aol.thewirawan.com/wp-content/themes/aol/functions.php on line 55
+[10-Mar-2018 14:39:10 UTC] PHP Fatal error:  Call to undefined function mfn_opts_get() in /home/thewiraw/aol.thewirawan.com/wp-content/themes/aol/functions.php on line 55
+[10-Mar-2018 14:40:31 UTC] PHP Fatal error:  Call to undefined function mfn_opts_get() in /home/thewiraw/aol.thewirawan.com/wp-content/themes/aol/functions.php on line 55
+[10-Mar-2018 14:41:12 UTC] PHP Fatal error:  Call to undefined function mfn_opts_get() in /home/thewiraw/aol.thewirawan.com/wp-content/themes/aol/functions.php on line 55
+[10-Mar-2018 14:42:32 UTC] PHP Fatal error:  Call to undefined function mfn_opts_get() in /home/thewiraw/aol.thewirawan.com/wp-content/themes/aol/functions.php on line 55
+[10-Mar-2018 14:43:13 UTC] PHP Fatal error:  Call to undefined function mfn_opts_get() in /home/thewiraw/aol.thewirawan.com/wp-content/themes/aol/functions.php on line 55
+[11-Mar-2018 01:24:38 UTC] PHP Warning:  require(/home/thewiraw/aol.thewirawan.com/wp-content/themes/aol/AOL-options/theme-options.php): failed to open stream: No such file or directory in /home/thewiraw/aol.thewirawan.com/wp-content/themes/aol/functions.php on line 53
+[11-Mar-2018 01:24:38 UTC] PHP Fatal error:  require(): Failed opening required '/home/thewiraw/aol.thewirawan.com/wp-content/themes/aol/AOL-options/theme-options.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/thewiraw/aol.thewirawan.com/wp-content/themes/aol/functions.php on line 53
+[11-Mar-2018 01:24:38 UTC] PHP Warning:  require(/home/thewiraw/aol.thewirawan.com/wp-content/themes/aol/AOL-options/theme-options.php): failed to open stream: No such file or directory in /home/thewiraw/aol.thewirawan.com/wp-content/themes/aol/functions.php on line 53
+[11-Mar-2018 01:24:38 UTC] PHP Fatal error:  require(): Failed opening required '/home/thewiraw/aol.thewirawan.com/wp-content/themes/aol/AOL-options/theme-options.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/thewiraw/aol.thewirawan.com/wp-content/themes/aol/functions.php on line 53
+[11-Mar-2018 01:26:33 UTC] PHP Warning:  require(/home/thewiraw/aol.thewirawan.com/wp-content/themes/aol/AOL-options/theme-options.php): failed to open stream: No such file or directory in /home/thewiraw/aol.thewirawan.com/wp-content/themes/aol/functions.php on line 53
+[11-Mar-2018 01:26:33 UTC] PHP Fatal error:  require(): Failed opening required '/home/thewiraw/aol.thewirawan.com/wp-content/themes/aol/AOL-options/theme-options.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/thewiraw/aol.thewirawan.com/wp-content/themes/aol/functions.php on line 53
+[12-Mar-2018 11:01:27 UTC] PHP Fatal error:  Call to undefined function nocache_headers() in /home/thewiraw/aol.thewirawan.com/wp-admin/admin.php on line 33
+[12-Mar-2018 11:03:06 UTC] PHP Fatal error:  Call to undefined function nocache_headers() in /home/thewiraw/aol.thewirawan.com/wp-admin/admin.php on line 33
+[12-Mar-2018 11:03:08 UTC] PHP Fatal error:  Call to undefined function nocache_headers() in /home/thewiraw/aol.thewirawan.com/wp-admin/admin.php on line 33
+[12-Mar-2018 11:03:22 UTC] PHP Fatal error:  Call to undefined function nocache_headers() in /home/thewiraw/aol.thewirawan.com/wp-admin/admin.php on line 33
+[12-Mar-2018 11:03:51 UTC] PHP Fatal error:  Call to undefined function nocache_headers() in /home/thewiraw/aol.thewirawan.com/wp-admin/admin.php on line 33
+[12-Mar-2018 11:03:52 UTC] PHP Fatal error:  Call to undefined function nocache_headers() in /home/thewiraw/aol.thewirawan.com/wp-admin/admin.php on line 33
+[12-Mar-2018 11:22:26 UTC] PHP Fatal error:  Call to undefined function nocache_headers() in /home/thewiraw/aol.thewirawan.com/wp-admin/admin.php on line 33
+[12-Mar-2018 13:39:58 UTC] PHP Fatal error:  Call to undefined function nocache_headers() in /home/thewiraw/aol.thewirawan.com/wp-admin/admin.php on line 33
+[12-Mar-2018 13:40:05 UTC] PHP Fatal error:  Call to undefined function nocache_headers() in /home/thewiraw/aol.thewirawan.com/wp-admin/admin.php on line 33
