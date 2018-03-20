@@ -1,6 +1,6 @@
 <?php
 /**
- * Widget Muffin Login
+ * Widget Login
  *
  * @package AOL
  * @author Capstone Group 12
@@ -18,7 +18,7 @@ if ( ! class_exists( 'Mfn_Login_Widget' ) ){
 			
 			$widget_ops = array( 'classname' => 'widget_mfn_login', 'description' => __( 'Displays Login Form.', 'mfn-opts' ) );
 			
-			parent::__construct( 'widget_mfn_login', __( 'Muffin Login', 'mfn-opts' ), $widget_ops );
+			parent::__construct( 'widget_mfn_login', __( 'Login', 'mfn-opts' ), $widget_ops );
 			
 			$this->alt_option_name = 'widget_mfn_login';
 		}

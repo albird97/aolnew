@@ -1,6 +1,6 @@
 <?php
 /**
- * Widget Muffin Tag Cloud
+ * Widget Tag Cloud
  *
  * @package AOL
  * @author Capstone Group 12
@@ -18,7 +18,7 @@ if ( ! class_exists( 'Mfn_Tag_Cloud_Widget' ) ){
 			
 			$widget_ops = array( 'classname' => 'widget_mfn_tag_cloud', 'description' => __( 'Your most used tags in cloud format .', 'mfn-opts' ) );
 			
-			parent::__construct( 'widget_mfn_tag_cloud', __( 'Muffin Tag Cloud', 'mfn-opts' ), $widget_ops );
+			parent::__construct( 'widget_mfn_tag_cloud', __( 'Tag Cloud', 'mfn-opts' ), $widget_ops );
 			
 			$this->alt_option_name = 'widget_mfn_tag_cloud';
 		}

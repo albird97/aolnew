@@ -1,6 +1,6 @@
 <?php
 /**
- * Widget Muffin Recent Posts
+ * Widget Recent Posts
  *
  * @package AOL
  * @author Capstone Group 12
@@ -18,7 +18,7 @@ if ( ! class_exists( 'Mfn_Recent_Posts_Widget' ) ){
 			
 			$widget_ops = array( 'classname' => 'widget_mfn_recent_posts', 'description' => __( 'The most recent posts on your site.', 'mfn-opts' ) );
 			
-			parent::__construct( 'widget_mfn_recent_posts', __( 'Muffin Recent Posts', 'mfn-opts' ), $widget_ops );
+			parent::__construct( 'widget_mfn_recent_posts', __( 'Recent Posts', 'mfn-opts' ), $widget_ops );
 			
 			$this->alt_option_name = 'widget_mfn_recent_posts';
 		}

@@ -4,9 +4,9 @@ if ( ! defined( 'ABSPATH' ) ){
 }
 
 /**
- * Install pre-built website
  * 
- * @author Muffin Group
+ * 
+ * @author Capstone Group 12
  * @version 2.0
  */
 class mfnImport {
@@ -18,14 +18,14 @@ class mfnImport {
 	private $demos 	= array();
 
 	private $categories = array(
-		'bus'	=> 'Business',
-		'ent'	=> 'Entertainment',
-		'cre'	=> 'Creative',
-		'blo'	=> 'Blog',
-		'por'	=> 'Portfolio',
-		'one'	=> 'One Page',
-		'sho'	=> 'Shop',
-		'oth'	=> 'Other',
+		#'bus'	=> 'Business',
+		#'ent'	=> 'Entertainment',
+		#'cre'	=> 'Creative',
+		#'blo'	=> 'Blog',
+		#'por'	=> 'Portfolio',
+		#'one'	=> 'One Page',
+		#'sho'	=> 'Shop',
+		#'oth'	=> 'Other',
 	);
 	
 	private $plugins = array(
@@ -74,13 +74,13 @@ class mfnImport {
 	 * Add theme page & enqueue styles
 	 */
 	function init() {
-		
+		/**
 		if( WHITE_LABEL ){
 			
 			// White Label | Hide 'Import Demo Data' Page
 			$this->page = add_theme_page(
-				__( 'Install pre-built website', 'mfn-opts' ),
-				'Theme pre-built websites',
+				__( ' ', '' ),
+				' ',
 				'edit_theme_options',
 				'mfn_import',
 				array( &$this, 'import_white' )
@@ -89,8 +89,8 @@ class mfnImport {
 		} else {
 			
 			$this->page = add_theme_page(
-				__( 'Install pre-built website', 'mfn-opts' ),
-				'AOL pre-built websites',
+				__( ' ', '' ),
+				' ',
 				'edit_theme_options',
 				'mfn_import',
 				array( &$this, 'import' )
@@ -98,7 +98,7 @@ class mfnImport {
 			
 		}
 		
-		add_action( 'admin_print_styles-'.$this->page, array( &$this, '_enqueue' ) );
+		add_action( 'admin_print_styles-'.$this->page, array( &$this, '_enqueue' ) );**/
 	}
 	
 	
@@ -140,9 +140,9 @@ class mfnImport {
 	 */
 	function get_demo_url( $demo ){
 		if( $demo == 'be' ){
-			$url = 'http://themes.muffingroup.com/betheme/';
+			$url = '#';
 		} else {
-			$url = 'http://themes.muffingroup.com/be/'. $demo .'/';
+			$url = '#'. $demo .'/';
 		}
 		return $url;
 	}
@@ -432,7 +432,7 @@ class mfnImport {
 	}
 
 	/**
-	 * Import | Migrate Muffin Builder
+	 * Import | Migrate AOL Builder
 	 * 
 	 * @param string $old_url
 	 */
@@ -865,21 +865,21 @@ class mfnImport {
 									}
 								?>
 
-								<a target="_blank" href="themes.php?page=muffin_options" class="mfn-button mfn-button-secondary">Go to Muffin Options</a>
+								<a target="_blank" href="themes.php?page=muffin_options" class="mfn-button mfn-button-secondary">Go to AOL Options</a>
 								<a target="_blank" href="<?php echo get_home_url(); ?>" class="mfn-button mfn-button-primary">Preview website</a>
 
 							</div>
 							
 							<div class="done-learn">
 								<span>or</span>
-								<div class="learn-header">Learn more about BeTheme</div>
+								<div class="learn-header"></div>
 								Remember, it is a good practise to read the manual first
 							</div>
 							
 							<div class="done-help">
-								<a target="_blank" href="http://themes.muffingroup.com/betheme/documentation/">
+								<a target="_blank" href="#">
 									<span class="dashicons dashicons-info"></span>
-									Learn how to use BeTheme from our manual
+									Learn how to use the theme from our manual
 								</a>
 							</div>
 
@@ -897,7 +897,7 @@ class mfnImport {
 					?>
 				
 				
-					<div class="subheader">
+					<!--<div class="subheader">
 						
 						<div class="filters">
 							<ul class="filter-categories">					
@@ -919,7 +919,7 @@ class mfnImport {
 							<a href="javascript:void(0);" class="open">Force import method</a>
 						</div>
 					
-					</div>
+					</div>-->
 					
 					<div id="mfn-method-popup">
 						<div class="popup-inner">
@@ -937,132 +937,6 @@ class mfnImport {
 							
 						</div>
 					</div>
-					
-					
-					<ul class="demos">
-						<?php
-							foreach( $this->demos as $key => $demo ){
-								
-								$categories = array_intersect_key( $this->categories, array_flip( $demo['categories'] ));
-								$categories = implode( ', ', $categories );
-	
-								// class | categories
-								$class = '';
-								if( is_array( $demo['categories'] ) ){
-									foreach( $demo['categories'] as $cat ){
-										$class .= ' category-' .$cat;	
-									}
-								}
-								
-								// data | name
-								if( isset( $demo['name'] ) ){
-									$demo_name = $demo['name'];
-								} else {
-									$demo_name = ucfirst( $key );
-								}
-								
-								echo '<li class="item'. $class .'" data-id="'. $key .'" data-name="'. $demo_name .'">';
-									
-									echo '<div class="border"></div>'; // border for hover effect
-										
-									echo '<div class="item-inner">';
-									
-										echo '<div class="item-header">';
-										
-											echo '<a href="javascript:void(0);" class="close"><i class="dashicons dashicons-no-alt"></i></a>';
-										
-											echo '<div class="item-image"></div>'; // sprite image
-	
-											echo '<div class="item-title">'. $demo_name .'</div>';
-												
-											if( $categories ){
-												echo '<div class="item-category">';
-													echo '<span class="label">Category:</span>';
-													echo '<span class="list">'. $categories .'</span>';
-												echo '</div>';
-											}
-										
-										echo '</div>';
-									
-										echo '<div class="item-content">';
-											echo '<div class="item-content-wrapper">';
-												
-												if( isset( $demo['plugins'] ) ){
-													
-													echo '<p>';
-														echo '<b>Install the following plugins before website installation</b>';
-													echo '</p>';
-				
-													echo '<ul class="plugins-used">';
-			
-														if( ( $plugins_key = array_search( 'rev', $demo['plugins'] ) ) !== false ){
-															
-															if( isset( $demo['revslider'] ) ){
-																$slider_name = $demo['revslider'];
-															} else {
-																$slider_name = $key .'.zip';
-															}
-	
-															echo '<li class="plugin-rev">';
-																echo '<b>'. $this->plugins[ 'rev' ]['name'] .'</b><br />';
-	
-																	if( is_plugin_active( $this->plugins[ 'rev' ]['url'] ) ){
-																		echo '<span class="install">Active</span>';
-																	} else {
-																		echo '<span class="install"><a target="_blank" href="themes.php?page=tgmpa-install-plugins">Install</a></span>';
-																	}
-																	
-																echo 'Import <span class="slider-name">'. $slider_name .'</span> after plugin installation. ';
-																echo '<a target="_blank" href="http://themes.muffingroup.com/betheme/documentation/#slider">How to import slider</a>';
-															echo '</li>';
-															
-															unset( $demo['plugins'][$plugins_key] );
-														}
-							
-														foreach( $demo['plugins'] as $plugin ){
-															
-															if( isset( $this->plugins[ $plugin ]['s'] ) ){
-																$install_url = 'plugin-install.php?s='. $this->plugins[ $plugin ]['s'] .'&amp;tab=search&amp;type=term';
-															} else {
-																$install_url = 'themes.php?page=tgmpa-install-plugins';
-															}
-															
-															echo '<li class="plugin-'. $plugin .'">';
-															
-																echo '<b>'. $this->plugins[ $plugin ]['name'] .'</b><br />';
-																
-																if( is_plugin_active( $this->plugins[ $plugin ]['url'] ) ){
-																	echo '<span class="install">Active</span>';
-																} else {
-																	echo '<span class="install"><a target="_blank" href="'. $install_url .'">Install</a></span>';
-																}
-																
-															echo '</li>';
-														}
-			
-													echo '</ul>';
-													
-												}
-			
-												echo '<a href="javascript:void(0);" class="mfn-button mfn-button-primary mfn-button-import">Install</a>';
-																							
-												if( isset( $demo['url'] ) ){
-													$demo_url = $demo['url'];
-												} else {
-													$demo_url = 'http://themes.muffingroup.com/be/'. $key .'/';
-												}
-												
-												echo '<p class="align-center"><a target="_blank" href="'. $demo_url .'">Live preview</a></p>';
-											
-											echo '</div>';
-										echo '</div>';
-									
-									echo '</div>';
-								
-								echo '</li>'."\n";
-							}
-						?>
-					</ul>	
 					
 					
 					<div id="mfn-demo-popup">

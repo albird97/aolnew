@@ -1,6 +1,6 @@
 <?php
 /**
- * Widget Muffin Menu
+ * Widget Menu
  *
  * @package AOL
  * @author Capstone Group 12
@@ -18,7 +18,7 @@ if ( ! class_exists( 'Mfn_Menu_Widget' ) ){
 			
 			$widget_ops = array( 'classname' => 'widget_mfn_menu', 'description' => __( 'Use this widget on pages to display aside menu with children or siblings of the current page', 'mfn-opts' ) );
 			
-			parent::__construct( 'widget_mfn_menu', __( 'Muffin Menu', 'mfn-opts' ), $widget_ops );
+			parent::__construct( 'widget_mfn_menu', __( 'Menu', 'mfn-opts' ), $widget_ops );
 			
 			$this->alt_option_name = 'widget_mfn_menu';
 		}

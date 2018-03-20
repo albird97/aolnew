@@ -1,6 +1,6 @@
 <?php
 /**
- * Widget Muffin Recent Comments
+ * Widget Recent Comments
  *
  * @package AOL
  * @author Capstone Group 12
@@ -18,7 +18,7 @@ if ( ! class_exists( 'Mfn_Recent_Comments_Widget' ) ){
 			
 			$widget_ops = array( 'classname' => 'widget_mfn_recent_comments', 'description' => __( 'The most recent comments.', 'mfn-opts' ) );
 			
-			parent::__construct( 'widget_mfn_recent_comments', __( 'Muffin Recent Comments', 'mfn-opts' ), $widget_ops );
+			parent::__construct( 'widget_mfn_recent_comments', __( 'Recent Comments', 'mfn-opts' ), $widget_ops );
 			
 			$this->alt_option_name = 'widget_mfn_recent_comments';
 		}

@@ -771,8 +771,8 @@ if( ! function_exists( 'mfn_opts_setup' ) )
 					'type' 		=> 'select',
 					'title' 	=> __('Content | Display Order', 'mfn-opts'),
 					'options' 	=> array(
-						0 => __('Muffin Builder - WordPress Editor', 'mfn-opts'),
-						1 => __('WordPress Editor - Muffin Builder', 'mfn-opts'),
+						0 => __('AOL Builder - WordPress Editor', 'mfn-opts'),
+						1 => __('WordPress Editor - AOL Builder', 'mfn-opts'),
 					),
 				),
 					
@@ -863,7 +863,7 @@ if( ! function_exists( 'mfn_opts_setup' ) )
 					'title' 	=> __('Theme Functions | Disable', 'mfn-opts'),
 					'desc' 		=> __('If you do not want to use any of these functions or use external plugins to do the same, you can disable it', 'mfn-opts'),
 					'options' 	=> array(
-						'demo-data'				=> __('AOL pre-built websites', 'mfn-opts'),
+						'demo-data'				=> __('###', 'mfn-opts'),
 						'categories-sidebars'	=> __('Categories Sidebars<span>This option affects existing sidebars. Please use before adding widgets</span>', 'mfn-opts'),
 						'entrance-animations'	=> __('Entrance Animations', 'mfn-opts'),
 						'mega-menu'				=> __('Mega Menu', 'mfn-opts'),
@@ -926,7 +926,7 @@ if( ! function_exists( 'mfn_opts_setup' ) )
 		// Hooks --------------------------------------------
 		$sections['hooks'] = array(
 			'title' 	=> __('Hooks', 'mfn-opts'),
-			'icon' 		=> MFN_OPTIONS_URI. 'img/icons/sub.png',
+			'icon' 		=> MFN_OPTIONS_URI. 'img/icons/sub2.png',
 			'fields'	=> array(
 	
 				array(

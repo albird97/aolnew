@@ -1,6 +1,6 @@
 <?php
 /**
- * Widget Muffin Flickr
+ * Widget AOL Flickr
  *
  * @package AOL
  * @author Capstone Group 12
@@ -18,7 +18,7 @@ if ( ! class_exists( 'Mfn_Flickr_Widget' ) ){
 			
 			$widget_ops = array( 'classname' => 'widget_mfn_flickr', 'description' => __( 'Use this widget on pages to display photos from Flickr photostream.', 'mfn-opts' ) );
 		
-			parent::__construct( 'widget_mfn_flickr', __( 'Muffin Flickr', 'mfn-opts' ), $widget_ops );
+			parent::__construct( 'widget_mfn_flickr', __( 'Flickr', 'mfn-opts' ), $widget_ops );
 	
 			$this->alt_option_name = 'widget_mfn_flickr';
 		}
