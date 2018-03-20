@@ -1,6 +1,6 @@
 <?php
 /**
- * 404 error page..
+ * 404 error page...
  *
  * @package AOL
  * @author Capstone Group 12
